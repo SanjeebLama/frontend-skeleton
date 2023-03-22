@@ -5,6 +5,7 @@ import '../styles/globals.css'
 import { Roboto_Slab } from 'next/font/google'
 import { QueryClient, QueryClientProvider } from 'react-query'
 import { ReactQueryDevtools } from 'react-query/devtools'
+import { ChakraProvider } from '@chakra-ui/react'
 
 const roboto = Roboto_Slab({
 	weight: '400',
@@ -18,7 +19,9 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 	return (
 		<main className={`${roboto.variable} font-sans`}>
 			<QueryClientProvider client={queryClient}>
-				<Component {...pageProps} />
+				<ChakraProvider>
+					<Component {...pageProps} />
+				</ChakraProvider>
 				<ReactQueryDevtools initialIsOpen={false} />
 			</QueryClientProvider>
 		</main>
