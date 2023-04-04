@@ -10,6 +10,8 @@ import {
 import { z, ZodType } from 'zod';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
+import { useTranslation } from 'next-i18next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 type FormData = {
 	firstName: string;
@@ -29,6 +31,8 @@ const countryOptions: TCountryOptions[] = [
 ];
 
 const ReactForm = () => {
+	const { t } = useTranslation();
+
 	const schema: ZodType<FormData> = z
 		.object({
 			firstName: z.string().min(2).max(10),
@@ -56,18 +60,16 @@ const ReactForm = () => {
 		alert(
 			` First Name: ${data.firstName},\n Last Name: ${data.lastName},\n Email: ${data.email},\n Password: ${data.password},\n Age: ${data.age},\n Country:${data.country}`
 		);
-		console.log(
-			`First Name: ${data.firstName}, Last Name: ${data.lastName}, Email: ${data.email}, Password: ${data.password},  Age: ${data.age}, Country:${data.country}`
-		);
 	};
+
 	return (
 		<VStack spacing={4} align='stretch' maxW='500px' m='auto'>
 			<Heading as='h1' size='lg' fontWeight='bold' my={6}>
-				My Form
+				{t('title')}
 			</Heading>
 			<form onSubmit={handleSubmit(onSubmitData)}>
 				<FormControl>
-					<FormLabel htmlFor='firstName'>First Name:</FormLabel>
+					<FormLabel htmlFor='firstName'>{t('form.firstName')}:</FormLabel>
 					<Input type='text' id='firstName' {...register('firstName')} />
 					{errors.firstName && (
 						<span className='text-red-500 text-sm'>
@@ -76,7 +78,7 @@ const ReactForm = () => {
 					)}
 				</FormControl>
 				<FormControl mt={5}>
-					<FormLabel htmlFor='lastName'>Last Name:</FormLabel>
+					<FormLabel htmlFor='lastName'>{t('form.lastName')}:</FormLabel>
 					<Input type='text' id='lastName' {...register('lastName')} />
 					{errors.lastName && (
 						<span className='text-red-500 text-sm'>
@@ -85,7 +87,7 @@ const ReactForm = () => {
 					)}
 				</FormControl>
 				<FormControl mt={5}>
-					<FormLabel htmlFor='age'>Age:</FormLabel>
+					<FormLabel htmlFor='age'>{t('form.age')}:</FormLabel>
 					<Input
 						type='number'
 						id='age'
@@ -96,7 +98,7 @@ const ReactForm = () => {
 					)}
 				</FormControl>
 				<FormControl mt={5}>
-					<FormLabel htmlFor='email'>Email:</FormLabel>
+					<FormLabel htmlFor='email'>{t('form.email')}:</FormLabel>
 					<Input type='text' id='email' {...register('email')} />
 					{errors.email && (
 						<span className='text-red-500 text-sm'>
@@ -105,7 +107,7 @@ const ReactForm = () => {
 					)}
 				</FormControl>
 				<FormControl mt={5}>
-					<FormLabel htmlFor='password'>Password:</FormLabel>
+					<FormLabel htmlFor='password'>{t('form.password')}:</FormLabel>
 					<Input type='password' id='password' {...register('password')} />
 					{errors.password && (
 						<span className='text-red-500 text-sm'>
@@ -114,7 +116,9 @@ const ReactForm = () => {
 					)}
 				</FormControl>
 				<FormControl mt={5}>
-					<FormLabel htmlFor='confirmPassword'>Confirm Password:</FormLabel>
+					<FormLabel htmlFor='confirmPassword'>
+						{t('form.confirmPassword')}:
+					</FormLabel>
 					<Input
 						type='password'
 						id='confirmPassword'
@@ -127,9 +131,9 @@ const ReactForm = () => {
 					)}
 				</FormControl>
 				<FormControl mt={5}>
-					<FormLabel htmlFor='country'>Country:</FormLabel>
+					<FormLabel htmlFor='country'>{t('form.country')}:</FormLabel>
 					<Select
-						placeholder='Select country'
+						placeholder={t('form.selectCountry') || undefined}
 						{...register('country')}
 						id='country'
 					>
@@ -141,7 +145,7 @@ const ReactForm = () => {
 					</Select>
 				</FormControl>
 				<Button type='submit' colorScheme='teal' mt={6} w='100%'>
-					Submit
+					{t('form.submit')}
 				</Button>
 			</form>
 		</VStack>
@@ -149,3 +153,11 @@ const ReactForm = () => {
 };
 
 export default ReactForm;
+
+export async function getStaticProps({ locale }: any) {
+	return {
+		props: {
+			...(await serverSideTranslations(locale, ['common'])),
+		},
+	};
+}

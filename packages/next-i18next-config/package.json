@@ -1,0 +1,9 @@
+{
+  "name": "next-i18next-config",
+  "version": "1.0.0",
+  "files": [
+    "next-i18next.config.js"
+  ],
+  "license": "MIT",
+  "private": true
+}
