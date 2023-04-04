@@ -8,9 +8,9 @@ import {
 	VStack,
 } from '@chakra-ui/react';
 import { z, ZodType } from 'zod';
-import { useForm, useController } from 'react-hook-form';
+import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { ChangeEvent } from 'react';
+
 type FormData = {
 	firstName: string;
 	lastName: string;
@@ -23,9 +23,9 @@ type FormData = {
 
 type TCountryOptions = { value: string; label: string };
 
-const countryOptions = [
-	{ value: 'np', label: 'Nepal' },
-	{ value: 'in', label: 'India' },
+const countryOptions: TCountryOptions[] = [
+	{ value: 'Nepal', label: 'Nepal' },
+	{ value: 'India', label: 'India' },
 ];
 
 const ReactForm = () => {
@@ -47,19 +47,15 @@ const ReactForm = () => {
 	const {
 		register,
 		handleSubmit,
-		control,
 		formState: { errors },
 	} = useForm<FormData>({
 		resolver: zodResolver(schema),
 	});
 
-	const { field } = useController({ name: 'country', control });
-
-	const handleCountryChange = (option: ChangeEvent<HTMLSelectElement>) => {
-		field.onChange(option.value);
-	};
-
 	const onSubmitData = (data: FormData) => {
+		alert(
+			` First Name: ${data.firstName},\n Last Name: ${data.lastName},\n Email: ${data.email},\n Password: ${data.password},\n Age: ${data.age},\n Country:${data.country}`
+		);
 		console.log(
 			`First Name: ${data.firstName}, Last Name: ${data.lastName}, Email: ${data.email}, Password: ${data.password},  Age: ${data.age}, Country:${data.country}`
 		);
@@ -130,13 +126,12 @@ const ReactForm = () => {
 						</span>
 					)}
 				</FormControl>
-				{/* <FormControl mt={5}>
+				<FormControl mt={5}>
 					<FormLabel htmlFor='country'>Country:</FormLabel>
 					<Select
 						placeholder='Select country'
-						value={countryOptions.find(({ value }) => value === field.value)}
 						{...register('country')}
-						onChange={handleCountryChange}
+						id='country'
 					>
 						{countryOptions.map((option) => (
 							<option key={option.value} value={option.value}>
@@ -144,7 +139,7 @@ const ReactForm = () => {
 							</option>
 						))}
 					</Select>
-				</FormControl> */}
+				</FormControl>
 				<Button type='submit' colorScheme='teal' mt={6} w='100%'>
 					Submit
 				</Button>
