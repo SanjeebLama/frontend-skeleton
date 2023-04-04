@@ -9,19 +9,31 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@chakra-ui/react": "^2.5.2",
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@hookform/resolvers": "^3.0.0",
+    "framer-motion": "^10.8.4",
     "next": "^13.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "ui": "*"
+    "react-hook-form": "^7.43.9",
+    "react-query": "^3.39.3",
+    "ui": "*",
+    "zod": "^3.21.4"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
-    "eslint": "7.32.0",
-    "eslint-config-custom": "*",
-    "tsconfig": "*",
     "@types/node": "^17.0.12",
     "@types/react": "^18.0.22",
     "@types/react-dom": "^18.0.7",
+    "autoprefixer": "^10.4.14",
+    "eslint": "7.32.0",
+    "eslint-config-custom": "*",
+    "postcss": "^8.4.21",
+    "tailwind-config": "*",
+    "tailwindcss": "^3.2.7",
+    "tsconfig": "*",
     "typescript": "^4.5.3"
   }
 }
