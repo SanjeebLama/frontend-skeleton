@@ -1,0 +1,14 @@
+{
+    "title": "My Form",
+    "form": {
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "age": "Age",
+        "email": "Email",
+        "password": "Password",
+        "confirmPassword": "Confirm Password",
+        "country": "Country",
+        "submit": "Submit",
+        "selectCountry": "Select Country"
+    }
+}

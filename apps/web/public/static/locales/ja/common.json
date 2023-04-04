@@ -1,0 +1,14 @@
+{
+    "title": "マイフォーム",
+    "form": {
+        "firstName": "ファーストネーム",
+        "lastName": "ラストネーム",
+        "age": "年齢",
+        "email": "電子メール",
+        "password": "パスワード",
+        "confirmPassword": "パスワードの確認",
+        "country": "国名",
+        "submit": "送信",
+        "selectCountry": "国を選択"
+    }
+}
