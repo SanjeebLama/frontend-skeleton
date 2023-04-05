@@ -4,8 +4,8 @@ import '../styles/globals.css';
 // include styles from the ui package
 // import "ui/styles.css";
 import { Roboto_Slab } from 'next/font/google';
-import { QueryClient, QueryClientProvider } from 'react-query';
-import { ReactQueryDevtools } from 'react-query/devtools';
+import { QueryClientProvider, QueryClient } from '@tanstack/react-query';
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import { ChakraProvider } from '@chakra-ui/react';
 
 const roboto = Roboto_Slab({
