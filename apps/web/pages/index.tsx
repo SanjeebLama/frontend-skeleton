@@ -1,5 +1,5 @@
-import { Button, TechStackInfo } from 'ui'
-import Link from 'next/link'
+import { CustomizableButton, TechStackInfo } from 'ui';
+import { Flex } from '@chakra-ui/react';
 
 export default function Web() {
 	return (
@@ -10,10 +10,15 @@ export default function Web() {
 			<p className='text-lg text-gray-600 mb-10'>
 				Built with Turbo repo for streamlined development
 			</p>
-			<Link href='/docs'>
-				<Button />
-			</Link>
+			<Flex>
+				<CustomizableButton
+					name='Documentation'
+					link='https://www.notion.so/wesionary-team/Frontend-Skeleton-Documentation-adac91e528a0498fb3e9316c86f3183b'
+					color='gray.500'
+				/>
+				<CustomizableButton name='Playground' link='/playground' color='teal' />
+			</Flex>
 			<TechStackInfo />
 		</div>
-	)
+	);
 }

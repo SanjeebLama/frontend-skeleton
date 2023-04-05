@@ -1,2 +1,2 @@
-export * from './Button'
-export * from './TechStackInfo'
+export * from './CustomizableButton';
+export * from './TechStackInfo';
