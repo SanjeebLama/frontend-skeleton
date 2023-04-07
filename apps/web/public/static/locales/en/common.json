@@ -9,6 +9,8 @@
         "confirmPassword": "Confirm Password",
         "country": "Country",
         "submit": "Submit",
-        "selectCountry": "Select Country"
+        "selectCountry": "Select Country",
+        "phone": "Phone Number",
+        "datePicker": "Commencement Date"
     }
 }

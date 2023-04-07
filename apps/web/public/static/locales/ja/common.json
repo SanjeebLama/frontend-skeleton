@@ -9,6 +9,15 @@
         "confirmPassword": "パスワードの確認",
         "country": "国名",
         "submit": "送信",
-        "selectCountry": "国を選択"
-    }
+        "selectCountry": "国を選択",
+        "phone": "電話番号",
+        "datePicker": "開始日"
+    },
+    "Enter your first name": "ファーストネームを入力してください",
+    "Enter your last name": "名字を入力してください",
+    "Your Email Address": "お客様のEメールアドレス",
+    "Re-enter your password": "パスワードを再入力する",
+    "Enter your phone number": "電話番号を入力する",
+    "Enter your password": "パスワードを入力する",
+    "Select a date": "日付を選択する"
 }
