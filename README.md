@@ -1,6 +1,5 @@
 [![Jira](https://badgen.net/badge/icon/jira?icon=jira&label)](https://wesionary-team.atlassian.net/jira/software/projects/FR/boards/58)
-[![Documentation](https://img.shields.io/badge/Documentation-Check%20Here-green.svg)](https://www.notion.so/wesionary-team/Frontend-Skeleton-Documentation-adac91e528a0498fb3e9316c86f3183b)
-
+[![](https://img.shields.io/badge/%F0%9F%93%9A-Documentation-green.svg)](https://www.notion.so/wesionary-team/Frontend-Skeleton-Documentation-adac91e528a0498fb3e9316c86f3183b)
 
 # 🚀 Turbo Frontend Skeleton
 
@@ -48,7 +47,8 @@ This turborepo has some additional tools already setup for you:
 | ESLint         | A pluggable linting utility for JavaScript and JSX  |
 | Prettier       | An opinionated code formatter                       |
   
-<p align="right">(<a href="#-turbo-frontend-skeleton">back to top</a>)</p>
+  
+<p align="right"><a href="#-turbo-frontend-skeleton">⬆️</a></p>
  
 </details>
 
@@ -86,6 +86,9 @@ yarn install
 ```
 
 Good Job! 🤗 You successfully installed the skeleton, now we just need to run project.
+  
+<p align="right"><a href="#-turbo-frontend-skeleton">⬆️</a></p>
+
 </details>
 
 
@@ -109,6 +112,8 @@ Good Job! 🤗 You successfully installed the skeleton, now we just need to run 
 ```jsx
    yarn workspace docs run dev
 ```
+  
+ <p align="right"><a href="#-turbo-frontend-skeleton">⬆️</a></p>
 </details>
 
 
@@ -150,7 +155,7 @@ yarn workspace docs run dev
 - Create a pull request (PR) for your changes so that they can be reviewed and merged into the develop branch.
 - Never merge directly into the main branch. All changes to the main branch should be done through a pull request.
 
-<p align="right">(<a href="#-turbo-frontend-skeleton">back to top ⬆️</a>)</p>
+<p align="right"><a href="#-turbo-frontend-skeleton">⬆️</a></p>
 </details>
 
 
