@@ -1,5 +1,5 @@
-[![Jira](https://badgen.net/badge/icon/jira?icon=jira&label)](https://wesionary-team.atlassian.net/jira/software/projects/FR/boards/58)
-[![](https://img.shields.io/badge/Documentation-darkblue?style=flat&logo=notion&logoWidth=20&logoHeight=20)](https://www.notion.so/wesionary-team/Frontend-Skeleton-Documentation-adac91e528a0498fb3e9316c86f3183b)
+![Jira](https://badgen.net/badge/icon/jira?icon=jira&label)
+![](https://img.shields.io/badge/Documentation-darkblue?style=flat&logo=notion&logoWidth=20&logoHeight=20)
 
 # 🚀 Turbo Frontend Skeleton
 
