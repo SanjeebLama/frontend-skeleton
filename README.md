@@ -48,7 +48,7 @@ This turborepo has some additional tools already setup for you:
 | ESLint         | A pluggable linting utility for JavaScript and JSX  |
 | Prettier       | An opinionated code formatter                       |
   
-<p align="right">(<a href="#overview">back to top</a>)</p>
+<p align="right">(<a href="#-turbo-frontend-skeleton">back to top</a>)</p>
  
 </details>
 
@@ -149,7 +149,7 @@ yarn workspace docs run dev
 - Create a pull request (PR) for your changes so that they can be reviewed and merged into the develop branch.
 - Never merge directly into the main branch. All changes to the main branch should be done through a pull request.
   
-  <p align="right">(<a href="#overview">back to top</a>)</p>
+  <p align="right"><a href="#-turbo-frontend-skeleton">back to top</a></p>
 </details>
 
 
