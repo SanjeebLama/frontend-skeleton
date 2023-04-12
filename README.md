@@ -1,5 +1,5 @@
-![Jira](https://badgen.net/badge/icon/jira?icon=jira&label)
-![](https://img.shields.io/badge/Documentation-darkblue?style=flat&logo=notion&logoWidth=20&logoHeight=20)
+[![Jira](https://badgen.net/badge/icon/jira?icon=jira&label)](https://github.com/SanjeebLama/Frontend-Skeleton)
+[![](https://img.shields.io/badge/Documentation-darkblue?style=flat&logo=notion&logoWidth=20&logoHeight=20)](https://github.com/SanjeebLama/Frontend-Skeleton)
 
 # 🚀 Turbo Frontend Skeleton
 
