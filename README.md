@@ -136,6 +136,7 @@ To run docs workspace
 cd turbo-frontend-skeleton
 yarn workspace docs run dev
 ```
+<p align="right"><a href="#-turbo-frontend-skeleton">⬆️</a></p>
 
 </details>
 
@@ -148,8 +149,8 @@ yarn workspace docs run dev
 - Make your changes in the new branch and test thoroughly.
 - Create a pull request (PR) for your changes so that they can be reviewed and merged into the develop branch.
 - Never merge directly into the main branch. All changes to the main branch should be done through a pull request.
-  
-  <p align="right"><a href="#-turbo-frontend-skeleton">back to top</a></p>
+
+<p align="right">(<a href="#-turbo-frontend-skeleton">back to top ⬆️</a>)</p>
 </details>
 
 
@@ -171,5 +172,7 @@ yarn workspace docs run dev
 - [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
 - [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
 - [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+
+  <p align="right"><a href="#-turbo-frontend-skeleton">⬆️</a></p>
 
   </details>
