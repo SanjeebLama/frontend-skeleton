@@ -2,7 +2,7 @@
 [![Documentation](https://img.shields.io/badge/Documentation-Check%20Here-green.svg)](https://www.notion.so/wesionary-team/Frontend-Skeleton-Documentation-adac91e528a0498fb3e9316c86f3183b)
 
 
-# Turbo Frontend Skeleton
+# 🚀 Turbo Frontend Skeleton
 
 Turbo Frontend Skeleton is a template designed to help streamline the process of creating new frontend projects. It comes equipped with all the latest stable dependencies that we use, allowing developers to get up and running quickly.
 
@@ -47,8 +47,10 @@ This turborepo has some additional tools already setup for you:
 | TypeScript     | A strict syntactical superset of JavaScript         |
 | ESLint         | A pluggable linting utility for JavaScript and JSX  |
 | Prettier       | An opinionated code formatter                       |
-
-  </details>
+  
+<p align="right">(<a href="#overview">back to top</a>)</p>
+ 
+</details>
 
 
 ## Installation:
@@ -146,7 +148,9 @@ yarn workspace docs run dev
 - Make your changes in the new branch and test thoroughly.
 - Create a pull request (PR) for your changes so that they can be reviewed and merged into the develop branch.
 - Never merge directly into the main branch. All changes to the main branch should be done through a pull request.
-    </details>
+  
+  <p align="right">(<a href="#overview">back to top</a>)</p>
+</details>
 
 
 ## Useful Links:
