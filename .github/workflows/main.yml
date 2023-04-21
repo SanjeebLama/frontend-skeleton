@@ -25,8 +25,8 @@ jobs:
         uses: amondnet/vercel-action@v20
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
-          vercel-args: --prod --yes
-          working-directory: apps/docs/**
+          vercel-args: --yes
+          working-directory: apps/docs/
 
       - name: Wait for Deployment
         run: |
