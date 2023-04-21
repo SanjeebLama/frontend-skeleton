@@ -18,13 +18,14 @@ jobs:
         run: npm install
 
       - name: Build App
+        working-directory: apps/docs
         run: npm run build
 
       - name: Deploy to Vercel
         uses: amondnet/vercel-action@v20
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
-          vercel-args: --yes
+          vercel-args: --yes --prod --include=apps/docs/**
 
       - name: Wait for Deployment
         run: |
