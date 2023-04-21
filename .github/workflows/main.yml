@@ -21,7 +21,7 @@ jobs:
         working-directory: apps/docs
         run: yarn workspace docs run build
 
-      - name: Deploy to Vercel
+      - name: Deploy apps/docs to Vercel
         uses: amondnet/vercel-action@v20
         working-directory: apps/docs
         with:
