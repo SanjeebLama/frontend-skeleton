@@ -17,7 +17,7 @@ jobs:
       - name: Install Dependencies
         run: yarn
 
-      - name: Build App
+      - name: Build App -- But do you we need to build here?
         working-directory: apps/docs
         run: yarn workspace docs run build
 
