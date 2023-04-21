@@ -20,15 +20,13 @@ jobs:
       - name: Build App
         working-directory: apps/docs
         run: yarn workspace docs run build
-          
+
       - name: Deploy apps/docs to Vercel
         uses: amondnet/vercel-action@v20
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
           vercel-args: --prod --yes
-          run: |
-            cd apps/docs/
-            vercel
+          working-directory: apps/docs/**
 
       - name: Wait for Deployment
         run: |
