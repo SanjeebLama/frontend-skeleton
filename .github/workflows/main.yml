@@ -26,7 +26,6 @@ jobs:
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
           vercel-args: --yes
-          working-directory: apps/docs/
 
       - name: Wait for Deployment
         run: |
