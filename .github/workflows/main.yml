@@ -15,17 +15,17 @@ jobs:
           node-version: 16.x
 
       - name: Install Dependencies
-        run: npm install
+        run: yarn
 
       - name: Build App
         working-directory: apps/docs
-        run: npm run build
+        run: yarn workspace docs run build
 
       - name: Deploy to Vercel
         uses: amondnet/vercel-action@v20
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
-          vercel-args: --yes --prod --include=apps/docs/**
+          vercel-args: --yes
 
       - name: Wait for Deployment
         run: |
