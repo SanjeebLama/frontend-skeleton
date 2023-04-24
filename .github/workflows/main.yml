@@ -27,6 +27,8 @@ jobs:
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
           vercel-args: --yes
+          build-dir: apps/docs/.next
+
 
       - name: Wait for Deployment
         run: |
