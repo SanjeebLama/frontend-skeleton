@@ -29,7 +29,6 @@ jobs:
           vercel-args: --yes
           build-dir: apps/docs/.next
 
-
       - name: Wait for Deployment
         run: |
           echo "Waiting for deployment to finish..."
@@ -40,8 +39,9 @@ jobs:
 
       - name: Run Lighthouse Tests
         run: |
+          cd apps/docs 
           npm install -g @lhci/cli@0.11.x
-          lhci autorun
+          lhci autorun --config apps/docs/lighthouserc.js
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
 
