@@ -19,7 +19,8 @@ jobs:
 
       - name: Build App -- But do you we need to build here?
         working-directory: apps/docs
-        run: yarn workspace docs run build
+        #run: yarn workspace docs run build
+        run: yarn run build
 
       - name: Deploy apps/docs to Vercel
         uses: amondnet/vercel-action@v20
