@@ -9,18 +9,18 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v3
 
-      - name: Use Node.js 16.x
-        uses: actions/setup-node@v3
-        with:
-          node-version: 16.x
+#       - name: Use Node.js 16.x
+#         uses: actions/setup-node@v3
+#         with:
+#           node-version: 16.x
 
-      - name: Install Dependencies
-        run: yarn
+#       - name: Install Dependencies
+#         run: yarn
 
-      - name: Build App -- But do you we need to build here?
-        working-directory: apps/docs
-        #run: yarn workspace docs run build
-        run: yarn run build
+#       - name: Build App -- But do you we need to build here?
+#         working-directory: apps/docs
+#         #run: yarn workspace docs run build
+#         run: yarn run build
 
       - name: Deploy apps/docs to Vercel
         uses: amondnet/vercel-action@v20
