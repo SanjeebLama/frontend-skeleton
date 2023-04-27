@@ -30,7 +30,6 @@ Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
 | [Chakra UI](https://chakra-ui.com)          | A simple and modular component library for React applications                                               |
 | [Storybook](https://storybook.js.org)       | An open-source tool for building UI components and pages in isolation                                      |
 | [React Query](https://tanstack.com)         | A library for managing and caching server state in React applications                                       |
-| [Axios](https://axios-http.com)             | Axios is a promise-based HTTP Client for node.js and the browser                                            |
 | [React Hook Form](https://react-hook-form.com) | A performant, flexible and extensible forms library for React with easy-to-use validation features    |
 | [zod](https://github.com/vriad/zod)        | A TypeScript-first schema validation tool that is intuitive, type-safe and practical                        |
 | [next-i18next](https://github.com/isaachinman/next-i18next) | A plugin for Next.js that provides a simple, powerful way to add internationalization to your app |
