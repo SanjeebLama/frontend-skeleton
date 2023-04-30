@@ -15,16 +15,19 @@ jobs:
           node-version: 16.x
 
       - name: Install Dependencies
-        run: npm install
+        run: yarn
 
-      - name: Build App
-        run: npm run build
+      - name: Build App -- But do you we need to build here?
+        working-directory: apps/docs
+        #run: yarn workspace docs run build
+        run: yarn run build
 
-      - name: Deploy to Vercel
+      - name: Deploy apps/docs to Vercel
         uses: amondnet/vercel-action@v20
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
           vercel-args: --yes
+          build-dir: apps/docs/.next
 
       - name: Wait for Deployment
         run: |
@@ -36,6 +39,7 @@ jobs:
 
       - name: Run Lighthouse Tests
         run: |
+          cd apps/docs 
           npm install -g @lhci/cli@0.11.x
           lhci autorun
         env:
