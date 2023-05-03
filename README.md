@@ -1,6 +1,7 @@
 [![Jira](https://badgen.net/badge/icon/jira?icon=jira&label)](https://github.com/SanjeebLama/Frontend-Skeleton)
 [![](https://img.shields.io/badge/Documentation-darkblue?style=flat&logo=notion&logoWidth=20&logoHeight=20)](https://github.com/SanjeebLama/Frontend-Skeleton)
 
+
 # 🚀 Turbo Frontend Skeleton
 
 Turbo Frontend Skeleton is a template designed to help streamline the process of creating new frontend projects. It comes equipped with all the latest stable dependencies that we use, allowing developers to get up and running quickly.
@@ -45,7 +46,195 @@ This turborepo has some additional tools already setup for you:
 | TypeScript     | A strict syntactical superset of JavaScript         |
 | ESLint         | A pluggable linting utility for JavaScript and JSX  |
 | Prettier       | An opinionated code formatter                       |
+
   
+  
+#### Project Tree
+  
+  ```
+frontend-skeleton
+├─ .vscode                     
+│  └─ settings.json
+├─ apps
+│  ├─ docs                                    
+│  │  ├─ .eslintrc.js
+│  │  ├─ README.md
+│  │  ├─ next-env.d.ts
+│  │  ├─ next.config.js
+│  │  ├─ package.json
+│  │  ├─ pages
+│  │  │  ├─ _app.tsx
+│  │  │  └─ index.tsx
+│  │  ├─ postcss.config.js
+│  │  ├─ styles
+│  │  │  └─ globals.css
+│  │  ├─ tailwind.config.js
+│  │  └─ tsconfig.json
+│  └─ web                                     
+│     ├─ .eslintrc.js
+│     ├─ .lighthouseci
+│     ├─ README.md
+│     ├─ next-env.d.ts
+│     ├─ next-i18next.config.js
+│     ├─ next.config.js
+│     ├─ package.json
+│     ├─ pages
+│     │  ├─ _app.tsx
+│     │  ├─ _error.tsx
+│     │  ├─ api
+│     │  │  ├─ axios
+│     │  │  │  └─ index.tsx
+│     │  │  └─ error.tsx
+│     │  ├─ index.tsx
+│     │  └─ playground
+│     │     ├─ axios
+│     │     │  └─ index.tsx
+│     │     ├─ index.tsx
+│     │     ├─ react-form
+│     │     │  └─ index.tsx
+│     │     └─ users
+│     │        └─ index.tsx
+│     ├─ postcss.config.js
+│     ├─ public
+│     │  └─ static
+│     │     ├─ assets
+│     │     │  ├─ Axios.png
+│     │     │  ├─ axios_example.png
+│     │     │  ├─ i18-example.png
+│     │     │  ├─ react-hook-form.png
+│     │     │  └─ react-query-fetch.png
+│     │     └─ locales
+│     │        ├─ en
+│     │        │  └─ common.json
+│     │        └─ ja
+│     │           └─ common.json
+│     ├─ sentry.client.config.js
+│     ├─ sentry.edge.config.js
+│     ├─ sentry.server.config.js
+│     ├─ services
+│     │  ├─ axios.ts
+│     │  └─ index.ts
+│     ├─ styles
+│     │  └─ globals.css
+│     ├─ tailwind.config.js
+│     └─ tsconfig.json
+├─ package.json
+├─ packages
+│  ├─  next-i18next-config
+│  │  ├─ next-i18next.config.js
+│  │  └─ package.json
+│  ├─ eslint-config-custom
+│  │  ├─ index.js
+│  │  └─ package.json
+│  ├─ tailwind-config
+│  │  ├─ package.json
+│  │  ├─ postcss.config.js
+│  │  └─ tailwind.config.js
+│  ├─ tsconfig
+│  │  ├─ README.md
+│  │  ├─ base.json
+│  │  ├─ nextjs.json
+│  │  ├─ package.json
+│  │  └─ react-library.json
+│  └─ ui
+│     ├─ .babelrc.json
+│     ├─ .storybook
+│     │  ├─ main.js
+│     │  └─ preview.js
+│     ├─ components
+│     │  ├─ atoms
+│     │  │  ├─ Axios
+│     │  │  │  ├─ Drawer
+│     │  │  │  │  └─ index.tsx
+│     │  │  │  ├─ Modal
+│     │  │  │  │  └─ index.tsx
+│     │  │  │  ├─ Table
+│     │  │  │  │  └─ index.tsx
+│     │  │  │  └─ index.tsx
+│     │  │  ├─ CustomDatePicker
+│     │  │  │  └─ index.tsx
+│     │  │  ├─ CustomInput
+│     │  │  │  └─ index.tsx
+│     │  │  ├─ CustomPasswordInput
+│     │  │  │  └─ index.tsx
+│     │  │  ├─ CustomSelect
+│     │  │  │  └─ index.tsx
+│     │  │  ├─ CustomizableButton
+│     │  │  │  └─ index.tsx
+│     │  │  ├─ DocumentationButton
+│     │  │  │  └─ index.tsx
+│     │  │  ├─ NumberInput
+│     │  │  │  └─ index.tsx
+│     │  │  ├─ RequiredIcon
+│     │  │  │  └─ index.tsx
+│     │  │  ├─ StoryButton
+│     │  │  │  ├─ StoryButton.stories.tsx
+│     │  │  │  └─ index.tsx
+│     │  │  ├─ TechStackInfo
+│     │  │  │  └─ index.tsx
+│     │  │  └─ index.ts
+│     │  ├─ index.ts
+│     │  ├─ molecules
+│     │  │  └─ index.ts
+│     │  └─ organisms
+│     │     └─ index.ts
+│     ├─ index.tsx
+│     ├─ package.json
+│     ├─ postcss.config.js
+│     ├─ stories
+│     │  ├─ Button.stories.tsx
+│     │  ├─ Button.tsx
+│     │  ├─ Header.stories.tsx
+│     │  ├─ Header.tsx
+│     │  ├─ Introduction.stories.mdx
+│     │  ├─ Page.stories.tsx
+│     │  ├─ Page.tsx
+│     │  ├─ assets
+│     │  │  ├─ code-brackets.svg
+│     │  │  ├─ colors.svg
+│     │  │  ├─ comments.svg
+│     │  │  ├─ direction.svg
+│     │  │  ├─ flow.svg
+│     │  │  ├─ plugin.svg
+│     │  │  ├─ repo.svg
+│     │  │  └─ stackalt.svg
+│     │  ├─ button.css
+│     │  ├─ header.css
+│     │  └─ page.css
+│     ├─ styles
+│     │  └─ globals.css
+│     ├─ tailwind.config.js
+│     ├─ tsconfig.json
+│     └─ types
+│        ├─ FormData.tsx
+│        └─ index.tsx
+├─ .eslintrc.js
+├─ .git
+├─ .gitignore
+├─ .nvmrc
+├─ .prettierrc
+├─ README.md
+├─ turbo.json
+└─ yarn.lock
+
+```
+  
+**Atomic Design System for Component Development**
+  - Atomic Design System is a methodology for creating design systems by breaking down the UI into fundamental building blocks called atoms, molecules, and organisms.
+  - Atoms are the smallest and most basic building blocks, molecules are groups of atoms that work together to form more complex and functional components, and organisms are groups of molecules and atoms that work together to form a more complete section or module of the interface.
+  - By using Atomic Design System, designers and developers can create scalable, reusable, and consistent components that can be easily maintained and updated.
+  - This approach promotes a more efficient and collaborative design process by providing a common language and framework for designers and developers to work with, while delivering high-quality and user-friendly experiences.
+
+  
+** Naming Convention**  
+  - Use a consistent and descriptive naming convention across all projects and components within the mono repo.
+  - Avoid using ambiguous or generic names that could create confusion or conflicts with other projects or components within the mono repo.
+  - Package names should be descriptive and easy to remember. For example, a package that contains code for a web server might be named my-web-server.
+  - Directory names should be similar to package names, but they should be more specific. For example, the directory that contains the code for the web server's main logic might be named src/web-server.
+  - File names should be descriptive and include the name of the file's contents. For example, a file that contains the code for the web server's main logic might be named main.js.
+  - Consider using a versioning scheme in the naming convention to indicate the version of the project or component (e.g., "app-v1.0", "lib-v2.3", "ui-v1.2.3", etc.).
+
+
   
 <p align="right"><a href="#-turbo-frontend-skeleton">⬆️</a></p>
  
