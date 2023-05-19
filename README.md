@@ -247,10 +247,10 @@ frontend-skeleton
 git clone https://github.com/SanjeebLama/frontend-skeleton.git
 ```
 
-2. Go inside `turbo-frontend-skeleton` folder
+2. Go inside `frontend-skeleton` folder
 
 ```jsx
-cd turbo-frontend-skeleton
+cd frontend-skeleton
 ```
 
 3. Checkout to `develop` branch
@@ -286,13 +286,13 @@ Good Job! 🤗 You successfully installed the skeleton, now we just need to run 
 <br>- To run **Web** workspace from root
 
 ```jsx
-   yarn workspace web run dev
+   yarn run web
 ```
 
 <br>- To run **Docs** workspace from root
 
 ```jsx
-   yarn workspace docs run dev
+   yarn run docs
 ```
 
  <p align="right"><a href="#-turbo-frontend-skeleton">⬆️</a></p>
@@ -305,22 +305,8 @@ Good Job! 🤗 You successfully installed the skeleton, now we just need to run 
 <br>To build all apps and packages, run the following command:
 
 ```
-cd turbo-frontend-skeleton
+cd frontend-skeleton
 yarn run build
-```
-
-To run apps workspace
-
-```
-cd turbo-frontend-skeleton
-yarn workspace web run dev
-```
-
-To run docs workspace
-
-```
-cd turbo-frontend-skeleton
-yarn workspace docs run dev
 ```
 
 <p align="right"><a href="#-turbo-frontend-skeleton">⬆️</a></p>
