@@ -13,10 +13,19 @@
         "!.next/cache/**"
       ]
     },
+    "dev": {
+      "cache": false
+    },
     "lint": {
       "outputs": []
     },
-    "dev": {
+    "web": {
+      "cache": false
+    },
+    "docs": {
+      "cache": false
+    },
+    "storybook": {
       "cache": false
     }
   }
